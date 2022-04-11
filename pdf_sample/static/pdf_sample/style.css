@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #333;
+    color: #fff;
+}
+
+h1,p{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+a{
+    text-decoration: none;
+    border : 1px #fff solid;
+    padding: 10px 30px;
+    color: #333;
+    background: #fff;
+    font-weight: 600;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'pdf_sample/style.css' %}">
+    <title>index</title>
+</head>
+<body>
+    {% for pdf_item in pdf_item %}
+    <h1> {{ pdf_item.title }} </h1>
+    <h1> {{ pdf_item.description }} </h1>
+    <section>
+       <a href= "{{ pdf_item.file.url }}">view pdf</a>
+    </section>
+    {% endfor %}
+</body>
+</html>
